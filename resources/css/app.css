@@ -118,9 +118,9 @@ h2 {
 }
 
 /* video box */
-#box-video {
+/* #box-video {
     box-shadow: 0 0 40px rgba(6, 218, 91, 0.797);
-}
+} */
 
 .video-container {
     position: relative;

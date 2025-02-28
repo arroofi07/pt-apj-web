@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>@yield('title')</title>
   @vite('resources/css/app.css', 'resources/js/app.js')
 </head>
 
-<body class="bg-black ">
+<body class="bg-gradient-to-br from-black via-gray-900 to-black">
 
 
   <div class="container-fluid flex justify-center items-center">
@@ -25,10 +25,17 @@
           <!-- Desktop Navigation -->
           <div class="hidden md:flex md:items-center md:space-x-8">
             <div class="flex space-x-1 font-semibold  ">
-              <a href="#" class="px-3 py-2 text-white hover:text-white relative group">
-                Product
+              @if (Route::currentRouteName() == 'layanan.layanan')
+              <a href="{{ route('home') }}" class="px-3 py-2 text-white hover:text-white relative group">
+                Home
                 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
               </a>
+              @else
+              <a href="{{ route('layanan.layanan') }}" class="px-3 py-2 text-white hover:text-white relative group">
+                Layanan
+                <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+              </a>
+              @endif
               <a href="#" class="px-3 py-2 text-white hover:text-white relative group">
                 Industries
                 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
@@ -76,7 +83,11 @@
         <div class="hidden md:hidden" id="mobile-menu">
 
           <div class="px-2 pt-2 pb-3 space-y-1">
-            <a href="#" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">Product</a>
+            @if (Route::currentRouteName() == 'layanan.layanan')
+            <a href="{{ route('home') }}" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">Home</a>
+            @else
+            <a href="{{ route('layanan.layanan') }}" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">Layanan</a>
+            @endif
             <a href="#" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">Industries</a>
             <a href="#" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">Explore</a>
             <a href="#" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 rounded-md">Learn</a>
