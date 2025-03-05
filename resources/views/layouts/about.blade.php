@@ -4,7 +4,7 @@
 
 <section id="box-video" class="container mt-14 md:mt-24 lg:mt-24 mx-auto w-[90%] xs:w-[90%] sm:w-full md:w-[95%] lg:w-[95%] px-4 sm:px-6 lg:px-8 my-4 xs:my-6 sm:my-8 md:my-10">
 
-  <div class="bg-black/40 backdrop-blur-md border-2 border-green-400/50 hover:border-green-400 rounded-xl p-6 xs:p-8 sm:p-10 transition-all duration-300 hover:shadow-xl hover:shadow-green-400/20">
+  <div class="bg-gray-800  backdrop-blur-md border-2 border-green-600 transition duration-300 hover:shadow-lg rounded-xl p-6 xs:p-8 sm:p-10  hover:shadow-green-400/40">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 xs:gap-8 sm:gap-10 items-center">
       <div class="col-span-1 w-[95%] xs:w-full mx-auto">
         <div class="video-container relative rounded-xl overflow-hidden shadow-2xl aspect-video transform transition-transform duration-300 hover:scale-[1.02]">
@@ -24,15 +24,12 @@
         <p class="text-gray-300 mb-6 text-sm xs:text-base sm:text-lg leading-relaxed">
           {{ $promoData[0]['description'] }}
         </p>
-        <button class="bg-gradient-to-r from-green-600 to-green-400 hover:from-green-500 hover:to-green-300 text-white font-medium py-2 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-green-400/20">
-          Pelajari Lebih Lanjut
-        </button>
       </div>
     </div>
   </div>
 
-  <div class="flex justify-center items-center mt-4">
-      <div class="flex space-x-8 md:space-x-28 animate-scroll justify-center items-center">
+  <div class="flex justify-center items-center mt-4  ">
+    <div class="flex space-x-8 md:space-x-28 animate-scroll justify-center items-center">
       <!-- Group 1 -->
       <div class="flex-shrink-0 flex flex-col items-center">
         <img src="{{ asset('apps-icons/adobe-photoshop.png') }}" alt="Code" class="w-10 h-10 md:w-16 md:h-16">
@@ -50,30 +47,22 @@
         <img src="{{ asset('apps-icons/adobe-indesign.png') }}" alt="Database" class="w-10 h-10 md:w-16 md:h-16">
         <p class="text-gray-300 hidden md:block mt-2 text-sm xs:text-base sm:text-lg">Adobe Indesign</p>
       </div>
-      <div class="flex-shrink-0 flex flex-col items-center">
-        <img src="{{ asset('apps-icons/adobe-premiere.png') }}" alt="Server" class="w-10 h-10 md:w-16 md:h-16">
-        <p class="text-gray-300 hidden md:block mt-2 text-sm xs:text-base sm:text-lg">Adobe Premiere</p>
-      </div>
       <!-- Group 2 (Duplicate untuk efek infinite scroll) -->
       <div class="flex-shrink-0 flex flex-col items-center">
-        <img src="{{ asset('apps-icons/adobe-lightroom.png') }}" alt="Code" class="w-10 h-10 md:w-16 md:h-16">
-        <p class="text-gray-300 hidden md:block mt-2 text-sm xs:text-base sm:text-lg">Adobe Lightroom</p>
+        <img src="{{ asset('apps-icons/adobe-photoshop.png') }}" alt="Code" class="w-10 h-10 md:w-16 md:h-16">
+        <p class="text-gray-300 hidden md:block mt-2 text-sm xs:text-base sm:text-lg">Adobe Photoshop</p>
       </div>
       <div class="flex-shrink-0 flex flex-col items-center">
-        <img src="{{ asset('apps-icons/adobe-after-effects.png') }}" alt="Laptop" class="w-10 h-10 md:w-16 md:h-16">
-        <p class="text-gray-300 hidden md:block mt-2 text-sm xs:text-base sm:text-lg">Adobe After Effects</p>
+        <img src="{{ asset('apps-icons/corel-draw.png') }}" alt="Mobile" class="w-10 h-10 md:w-16 md:h-16">
+        <p class="text-gray-300 hidden md:block mt-2 text-sm xs:text-base sm:text-lg">Corel Draw</p>
       </div>
       <div class="flex-shrink-0 flex flex-col items-center">
-        <img src="{{ asset('apps-icons/adobe-animate.png') }}" alt="Mobile" class="w-10 h-10 md:w-16 md:h-16">
-        <p class="text-gray-300 hidden md:block mt-2 text-sm xs:text-base sm:text-lg">Adobe Animate</p>
+        <img src="{{ asset('apps-icons/adobe-ilustrator.png') }}" alt="Database" class="w-10 h-10 md:w-16 md:h-16">
+        <p class="text-gray-300 hidden md:block mt-2 text-sm xs:text-base sm:text-lg">Adobe Ilustrator</p>
       </div>
       <div class="flex-shrink-0 flex flex-col items-center">
-        <img src="{{ asset('apps-icons/adobe-audition.png') }}" alt="Database" class="w-10 h-10 md:w-16 md:h-16">
-        <p class="text-gray-300 hidden md:block mt-2 text-sm xs:text-base sm:text-lg">Adobe Audition</p>
-      </div>
-      <div class="flex-shrink-0 flex flex-col items-center">
-        <img src="{{ asset('apps-icons/adobe-media-encoder.png') }}" alt="Server" class="w-10 h-10 md:w-16 md:h-16">
-        <p class="text-gray-300 hidden md:block mt-2 text-sm xs:text-base sm:text-lg">Adobe Media Encoder</p>
+        <img src="{{ asset('apps-icons/adobe-indesign.png') }}" alt="Laptop" class="w-10 h-10 md:w-16 md:h-16">
+        <p class="text-gray-300 hidden md:block mt-2 text-sm xs:text-base sm:text-lg">Adobe Indesign</p>
       </div>
     </div>
   </div>

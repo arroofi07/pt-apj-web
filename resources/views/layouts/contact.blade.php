@@ -13,7 +13,7 @@
             </div>
             <div>
               <h4 class="text-lg font-bold text-white mb-1">Lokasi</h4>
-              <p class="text-gray-300">Jl. Andalas No. 123, Padang, Sumatera Barat</p>
+              <p class="text-gray-300">Jalan Situjuh No. 1 Padang, Sumatera Barat - 25129</p>
             </div>
           </div>
 
@@ -23,7 +23,7 @@
             </div>
             <div>
               <h4 class="text-lg font-bold text-white mb-1">Telepon</h4>
-              <p class="text-gray-300">+62 812-3456-7890</p>
+              <p class="text-gray-300">0822-8835-2595</p>
             </div>
           </div>
 
@@ -33,14 +33,15 @@
             </div>
             <div>
               <h4 class="text-lg font-bold text-white mb-1">Email</h4>
-              <p class="text-gray-300">info@andalaspublikasi.com</p>
+              <p class="text-gray-300">cebitunand@gmail.com</p>
             </div>
           </div>
         </div>
       </div>
 
+
       <div class="order-1 lg:order-2">
-        <div class="w-[95%] xs:w-full mx-auto bg-black/40 backdrop-blur-md rounded-2xl p-3 xs:p-4 sm:p-6 md:p-8 shadow-2xl text-white border-2 border-green-400/50 hover:border-green-400 transition-all duration-300">
+        <div class="w-[95%] xs:w-full mx-auto bg-gray-800 backdrop-blur-md rounded-2xl p-3 xs:p-4 sm:p-6 md:p-8 shadow-2xl text-white border-2 border-green-400/50 hover:border-green-400 transition-all duration-300">
           <form>
             <div class="grid md:grid-cols-2 gap-3 xs:gap-4 md:gap-6 mb-4 md:mb-6">
               <div>
@@ -56,7 +57,7 @@
             <div class="mb-6">
               <textarea rows="5" class="w-full px-4 py-3 placeholder:text-white/60 bg-white/5 border border-green-400/50 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-green-400 outline-none transition-all duration-300" placeholder="Pesan Anda"></textarea>
             </div>
-            <button type="submit" class="w-full bg-gradient-to-r from-green-600 to-green-400 hover:from-green-500 hover:to-green-300 text-white font-medium py-3 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-green-400/20">
+            <button type="submit" class="w-full bg-gradient-to-r cursor-pointer from-green-600 to-green-400 hover:from-green-500 hover:to-green-300 text-white font-medium py-3 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-green-400/20">
               Kirim Pesan
             </button>
           </form>

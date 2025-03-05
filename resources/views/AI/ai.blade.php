@@ -8,7 +8,7 @@
 
 <div class="min-h-screen bg-gradient-to-br py-6 flex flex-col justify-center sm:py-12">
   <div class="max-w-3xl mx-auto w-full px-4">
-    <div class="bg-white shadow-lg rounded-xl border border-emerald-100">
+    <div class="bg-gray-800 from-gray-500 to-gray-700 shadow-lg rounded-xl border border-emerald-100">
       <!-- Header -->
       <div class="bg-green-700 px-6 py-4 rounded-t-xl">
         <h2 class="text-xl font-semibold text-white flex items-center gap-2">
@@ -16,7 +16,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
           </svg>
           <h1 class="text-white text-2xl font-bold">
-            Chat dengan AI Assistant
+            Chat dengan AI kami
           </h1>
         </h2>
       </div>
@@ -31,10 +31,10 @@
         <div class="flex space-x-3">
           <input type="text"
             id="userInput"
-            class="flex-1 rounded-lg border border-green-200 px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-green-500 focus:border-green-500 transition-all duration-200"
+            class="flex-1 rounded-lg border placeholder:text-white text-white border-green-200 px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-green-500 focus:border-green-500 transition-all duration-200"
             placeholder="Ketik pertanyaan Anda di sini..." />
           <button onclick="sendMessage()"
-              class="bg-green-700 hover:bg-green-800 text-white rounded-lg px-4 py-2 transition duration-200 flex items-center gap-2 text-sm">
+            class="bg-green-700 hover:bg-green-800 text-white rounded-lg px-4 py-2 transition duration-200 flex items-center gap-2 text-sm">
             <span>Kirim</span>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
               <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
@@ -67,13 +67,13 @@
         'https://openrouter.ai/api/v1/chat/completions', {
           method: 'POST',
           headers: {
-            Authorization: 'Bearer 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',
+            Authorization: 'Bearer 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',
             'HTTP-Referer': 'https://www.andalas-publikasi-jaya.com',
             'X-Title': 'andalas-publikasi-jaya',
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            model: 'meta-llama/llama-3.3-70b-instruct:free',
+            model: 'deepseek/deepseek-r1:free',
             messages: [{
               role: 'user',
               content: input

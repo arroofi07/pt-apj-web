@@ -24,7 +24,7 @@
           </p>
           <div class="flex xs:flex-row gap-2 xs:gap-3 sm:gap-4 animate-fade-in-up delay-500 items-center md:justify-end">
             <a href="#layanan" class="w-full md:w-2/2 lg:w-2/2 xs:w-auto px-3 xs:px-4 sm:px-6 py-2 sm:py-3 bg-green-400/70 hover:bg-green-400 text-white font-medium rounded-lg transition duration-300 transform hover:-translate-y-1 text-center text-sm sm:text-base">Jelajahi Layanan</a>
-            <a href="#contact" class="w-full md:w-2/2 lg:w-2/2 xs:w-auto px-3 xs:px-4 sm:px-6 py-2 sm:py-3 border-2 border-white text-white font-medium rounded-lg hover:bg-white/10 transition duration-300 transform hover:-translate-y-1 text-center text-sm sm:text-base">Hubungi Kami</a>
+            <a href="#contact" class="w-full md:w-2/2 lg:w-2/2 xs:w-auto px-3 xs:px-4 sm:px-6 py-2 sm:py-3 border-2 border-green-600 bg-gray-800 backdrop-blur-md text-white font-medium rounded-lg hover:bg-white/10 transition duration-300 transform hover:-translate-y-1 text-center text-sm sm:text-base">Hubungi Kami</a>
           </div>
         </div>
       </div>
@@ -40,6 +40,9 @@
 
   <!-- Contact Section -->
   @include('layouts.contact')
+
+  <!-- footer -->
+  @include('layouts.footer')
 
   <!-- script -->
   <script>
