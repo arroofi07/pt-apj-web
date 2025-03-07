@@ -26,7 +26,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
               </svg>
-              Layanan Cetak
+              Layanan Cetak + Desain
             </a>
             <a href="{{ route('layanan.filter', 'penerbitan-buku') }}"
               class="block px-4 py-3 rounded-md {{ $activeCategory === 'penerbitan-buku' ? 'bg-green-600 text-white' : 'bg-gray-700 text-gray-200' }} hover:bg-green-500 transition duration-200 flex items-center">
@@ -83,7 +83,7 @@
                   <h5 class="text-xl font-bold mb-3 text-white">{{ $layanan['nama'] }}</h5>
                   <p class="text-gray-300 mb-5 flex-grow">{{ $layanan['deskripsi'] }}</p>
                   <button onclick="orderWhatsApp(this, `{{ $layanan['nama'] }}`)"
-                    class="inline-flex items-center justify-center px-4 py-3 bg-green-600 text-white font-medium rounded-lg hover:bg-green-600 transition duration-200 group-hover:shadow-md">
+                    class="inline-flex cursor-pointer items-center justify-center px-4 py-3 bg-green-600 text-white font-medium rounded-lg hover:bg-green-400 transition duration-200 group-hover:shadow-md">
                     <span id="buttonText">Order via WhatsApp</span>
                     <div id="loading" class="hidden">
                       <svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">

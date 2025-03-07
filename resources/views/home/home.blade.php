@@ -23,8 +23,23 @@
             Andalas Publikasi Jaya - Partner terpercaya untuk solusi percetakan dan penerbitan berkualitas
           </p>
           <div class="flex xs:flex-row gap-2 xs:gap-3 sm:gap-4 animate-fade-in-up delay-500 items-center md:justify-end">
-            <a href="#layanan" class="w-full md:w-2/2 lg:w-2/2 xs:w-auto px-3 xs:px-4 sm:px-6 py-2 sm:py-3 bg-green-400/70 hover:bg-green-400 text-white font-medium rounded-lg transition duration-300 transform hover:-translate-y-1 text-center text-sm sm:text-base">Jelajahi Layanan</a>
-            <a href="#contact" class="w-full md:w-2/2 lg:w-2/2 xs:w-auto px-3 xs:px-4 sm:px-6 py-2 sm:py-3 border-2 border-green-600 bg-gray-800 backdrop-blur-md text-white font-medium rounded-lg hover:bg-white/10 transition duration-300 transform hover:-translate-y-1 text-center text-sm sm:text-base">Hubungi Kami</a>
+            <a href="#layanan" class="w-full md:w-2/2 lg:w-2/2 xs:w-auto px-3 xs:px-4 sm:px-6 py-2 sm:py-3 bg-green-400/70 hover:bg-green-400 text-white font-medium rounded-lg transition duration-300 transform hover:-translate-y-1 text-center text-sm sm:text-base"> Jelajahi Layanan</a>
+            <a href="#contact" class="w-full md:w-2/2 lg:w-2/2 xs:w-auto px-3 xs:px-4 sm:px-6 py-2 sm:py-3 border-2 border-gray-600  bg-gradient-to-br from-gray-700 to-gray-800 text-white font-medium rounded-lg hover:border-green-400 transition duration-300 transform hover:-translate-y-1 text-center text-sm sm:text-base"> Hubungi Kami</a>
+          </div>
+          <!-- icons -->
+          <div class="flex mt-6 gap-4 animate-fade-in-up delay-500 items-center justify-center md:justify-start">
+            <a href="https://wa.me/6282288352595"
+              class="p-2 rounded-lg transition-all duration-300 hover:scale-110 animate-bounce delay-300 hover:bg-green-500/10 text-green-600">
+              <x-fab-square-whatsapp class="w-8 h-8 sm:w-14 sm:h-14" />
+            </a>
+            <a href="https://www.instagram.com/unandpress_?igsh=d2plazY2NGU4c2Zk"
+              class="p-2 rounded-lg transition-all duration-300 hover:scale-110 animate-bounce delay-400 hover:bg-pink-500/10 text-pink-600 ">
+              <x-fab-square-instagram class="w-8 h-8 sm:w-14 sm:h-14" />
+            </a>
+            <a href="https://www.facebook.com/unandpress"
+              class="p-2 rounded-lg transition-all duration-300 hover:scale-110 animate-bounce delay-500 hover:bg-blue-500/10 text-blue-600">
+              <x-fab-square-facebook class="w-8 h-8 sm:w-14 sm:h-14" />
+            </a>
           </div>
         </div>
       </div>

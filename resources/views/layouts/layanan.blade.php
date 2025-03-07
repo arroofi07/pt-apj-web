@@ -7,7 +7,7 @@
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 xs:gap-6 md:gap-8 text-black">
       <!-- Card 1 -->
-      <div class="w-[95%] xs:w-full mx-auto text-white bg-gray-800 backdrop-blur-md border-2 border-green-600 hover:border-green-400 rounded-xl shadow-lg p-4 xs:p-6 md:p-8 transition-all duration-300 hover:shadow-xl hover:shadow-green-400/20 transform hover:-translate-y-2">
+      <div class="w-[95%] xs:w-full mx-auto text-white  bg-gradient-to-br from-gray-700 to-gray-800 border-2 border-green-600 hover:border-green-400 rounded-xl shadow-lg p-4 xs:p-6 md:p-8 transition-all duration-300 hover:shadow-xl hover:shadow-green-400/20 transform hover:-translate-y-2">
         <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gradient-to-br from-green-400 to-green-600 text-white mb-6 shadow-lg shadow-green-400/20">
           <x-entypo-print class="h-8 w-8" />
         </div>
@@ -49,7 +49,7 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="w-[95%] xs:w-full mx-auto text-white bg-gray-800 backdrop-blur-md border-2 border-green-600 hover:border-green-400 rounded-xl shadow-lg p-4 xs:p-6 md:p-8 transition-all duration-300 hover:shadow-xl hover:shadow-green-400/20 transform hover:-translate-y-2">
+      <div class="w-[95%] xs:w-full mx-auto text-white  bg-gradient-to-br from-gray-700 to-gray-800 border-2 border-green-600 hover:border-green-400 rounded-xl shadow-lg p-4 xs:p-6 md:p-8 transition-all duration-300 hover:shadow-xl hover:shadow-green-400/20 transform hover:-translate-y-2">
         <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gradient-to-br from-green-400 to-green-600 text-white mb-6 shadow-lg shadow-green-400/20">
           <x-entypo-open-book class="h-8 w-8" />
         </div>
@@ -83,7 +83,7 @@
       </div>
 
       <!-- Card 3 -->
-        <div class="w-[95%] xs:w-full mx-auto text-white bg-gray-800 backdrop-blur-md border-2 border-green-600 hover:border-green-400 rounded-xl shadow-lg p-4 xs:p-6 md:p-8 transition-all duration-300 hover:shadow-xl hover:shadow-green-400/20 transform hover:-translate-y-2 flex flex-col justify-between">
+        <div class="w-[95%] xs:w-full mx-auto text-white  bg-gradient-to-br from-gray-700 to-gray-800 border-2 border-green-600 hover:border-green-400 rounded-xl shadow-lg p-4 xs:p-6 md:p-8 transition-all duration-300 hover:shadow-xl hover:shadow-green-400/20 transform hover:-translate-y-2 flex flex-col justify-between">
         <div>
           <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gradient-to-br from-green-400 to-green-600 text-white mb-6 shadow-lg shadow-green-400/20">
             <x-entypo-images class="h-8 w-8" />

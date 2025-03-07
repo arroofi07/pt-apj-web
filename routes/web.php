@@ -10,6 +10,10 @@ Route::get('/ai', function () {
     return view('AI.ai');
 })->name('ai');
 
+Route::get('/fasilitas', function () {
+    return view('fasilitas.fasilitas');
+})->name('fasilitas.fasilitas');
+
 Route::get('/navbar', function () {
     return view('layouts.navbar');
 });

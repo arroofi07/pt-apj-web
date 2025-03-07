@@ -8,7 +8,7 @@
 
 <div class="min-h-screen bg-gradient-to-br py-6 flex flex-col justify-center sm:py-12">
   <div class="max-w-3xl mx-auto w-full px-4">
-    <div class="bg-gray-800 from-gray-500 to-gray-700 shadow-lg rounded-xl border border-emerald-100">
+    <div class=" bg-gradient-to-br from-gray-700 to-gray-800 shadow-lg rounded-xl border border-emerald-100">
       <!-- Header -->
       <div class="bg-green-700 px-6 py-4 rounded-t-xl">
         <h2 class="text-xl font-semibold text-white flex items-center gap-2">

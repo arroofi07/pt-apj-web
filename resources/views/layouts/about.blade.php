@@ -4,7 +4,7 @@
 
 <section id="box-video" class="container mt-14 md:mt-24 lg:mt-24 mx-auto w-[90%] xs:w-[90%] sm:w-full md:w-[95%] lg:w-[95%] px-4 sm:px-6 lg:px-8 my-4 xs:my-6 sm:my-8 md:my-10">
 
-  <div class="bg-gray-800  backdrop-blur-md border-2 border-green-600 transition duration-300 hover:shadow-lg rounded-xl p-6 xs:p-8 sm:p-10  hover:shadow-green-400/40">
+  <div class=" bg-gradient-to-br from-gray-700 to-gray-800 border-2 border-green-600 transition duration-300 hover:shadow-lg rounded-xl p-6 xs:p-8 sm:p-10  hover:shadow-green-400/40">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 xs:gap-8 sm:gap-10 items-center">
       <div class="col-span-1 w-[95%] xs:w-full mx-auto">
         <div class="video-container relative rounded-xl overflow-hidden shadow-2xl aspect-video transform transition-transform duration-300 hover:scale-[1.02]">
@@ -28,7 +28,7 @@
     </div>
   </div>
 
-  <div class="flex justify-center items-center mt-4  ">
+  <div class="flex justify-center items-center mt-10  ">
     <div class="flex space-x-8 md:space-x-28 animate-scroll justify-center items-center">
       <!-- Group 1 -->
       <div class="flex-shrink-0 flex flex-col items-center">

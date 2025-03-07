@@ -17,7 +17,7 @@
         <div class="flex justify-between h-16">
           <!-- Logo and Brand -->
           <div class="flex items-center  ">
-            <a href="#" class="flex items-center space-x-2">
+            <a href="{{ route('home') }}" class="flex items-center space-x-2">
               <span class="text-xl font-bold text-white">Andalas Publikasi Jaya</span>
             </a>
           </div>
@@ -37,15 +37,15 @@
               </a>
               @endif
               <a href="#" class="px-3 py-2 text-white hover:text-white relative group">
-                Industries
+                Tentang Kami
+                <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+              </a>
+              <a href="{{ route('fasilitas.fasilitas') }}" class="px-3 py-2 text-white hover:text-white relative group">
+                Fasilitas
                 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
               </a>
               <a href="#" class="px-3 py-2 text-white hover:text-white relative group">
-                Explore
-                <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
-              </a>
-              <a href="#" class="px-3 py-2 text-white hover:text-white relative group">
-                Learn
+                Team
                 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
               </a>
             </div>
@@ -53,16 +53,19 @@
             <!-- Right Side Buttons -->
             <div class="flex items-center space-x-4">
               @if (Route::currentRouteName() == 'ai')
-              <a href="{{ route('home') }}" class="px-4 py-2 text-sm font-medium text-white bg-gray-800 rounded-full hover:bg-gray-700">
-                Home
+              <a href="{{ route('home') }}" class="flex items-center space-x-2 px-4 py-2 text-sm font-medium text-white bg-gray-800 rounded-full hover:bg-gray-700">
+                <x-entypo-home class="w-5 h-5" />
+                <span>Home</span>
               </a>
               @else
-              <a href="{{ route('ai') }}" class="px-4 py-2 text-sm font-medium text-white bg-gray-800 rounded-full hover:bg-gray-700">
-                Tanya AI
+              <a href="{{ route('ai') }}" class="flex items-center space-x-2 px-4 py-2 text-sm font-medium text-white bg-gray-800 rounded-full hover:bg-gray-700">
+                <x-bi-robot class="w-5 h-5" />
+                <span>Tanya AI</span>
               </a>
               @endif
-              <a href="#" class="px-4 py-2 text-sm font-medium text-black bg-white rounded-full hover:bg-gray-100">
-                Hubungi Kami
+              <a href="#" class="flex items-center space-x-2 px-4 py-2 text-sm font-medium text-black bg-white rounded-full hover:bg-gray-100">
+                <x-entypo-phone class="w-5 h-5" />
+                <span>Hubungi Kami</span>
               </a>
             </div>
           </div>

@@ -55,6 +55,20 @@ class LayananController extends Controller
         'kategori' => 'layanan-cetak'
       ],
       [
+        'nama' => 'Penerbitan Buku ISBN',
+        'deskripsi' => 'Layanan penerbitan buku ISBN dengan kualitas terbaik.',
+        'harga' => 'Rp 100.000',
+        'gambar' => '/image-service/penerbitan.jpg',
+        'kategori' => 'penerbitan-buku'
+      ],
+      [
+        'nama' => 'Undangan',
+        'deskripsi' => 'Layanan cetak undangan dengan kualitas terbaik.',
+        'harga' => 'Rp 100.000',
+        'gambar' => '/image-service/undangan.jpg',
+        'kategori' => 'layanan-cetak'
+      ],
+      [
         'nama' => 'Neon Box',
         'deskripsi' => 'Layanan cetak neon box dengan kualitas terbaik.',
         'harga' => 'Rp 100.000',
