@@ -36,10 +36,6 @@
                 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
               </a>
               @endif
-              <a href="#" class="px-3 py-2 text-white hover:text-white relative group">
-                Tentang Kami
-                <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
-              </a>
               <a href="{{ route('fasilitas.fasilitas') }}" class="px-3 py-2 text-white hover:text-white relative group">
                 Fasilitas
                 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
