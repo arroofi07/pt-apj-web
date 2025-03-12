@@ -27,53 +27,79 @@
       </div>
     </div>
   </div>
+  <!-- Tool Showcase Section -->
+  <div class="mt-20 text-center">
+    <h3 class="text-xl sm:text-2xl font-semibold text-white mb-8">Tools We Use</h3>
+    <div class="relative w-full mx-auto overflow-hidden">
+      <div class="flex justify-center items-center">
+        <div class="flex space-x-12 md:space-x-16 md:mt-8 lg:space-x-24 animate-scroll">
+          <!-- Tools Group 1 -->
+          <div class="tool-item group">
+            <div class="w-16 h-16 md:w-20 md:h-20 bg-slate-800/80 rounded-xl p-3 flex items-center justify-center mb-3 shadow-lg group-hover:bg-slate-700 transition-all duration-300 mx-auto border border-slate-700">
+              <img src="{{ asset('apps-icons/adobe-photoshop.png') }}" alt="Adobe Photoshop" class="w-10 h-10 md:w-12 md:h-12">
+            </div>
+            <p class="text-gray-300 group-hover:text-white text-sm md:text-base transition-colors duration-300">Adobe Photoshop</p>
+          </div>
 
-  <div class="flex justify-center items-center mt-10  ">
-    <div class="flex space-x-8 md:space-x-28 animate-scroll justify-center items-center">
-      <!-- Group 1 -->
-      <div class="flex-shrink-0 flex flex-col items-center">
-        <img src="{{ asset('apps-icons/adobe-photoshop.png') }}" alt="Code" class="w-10 h-10 md:w-16 md:h-16">
-        <p class="text-gray-300 hidden md:block mt-2 text-sm xs:text-base sm:text-lg">Adobe Photoshop</p>
-      </div>
-      <div class="flex-shrink-0 flex flex-col items-center">
-        <img src="{{ asset('apps-icons/corel-draw.png') }}" alt="Laptop" class="w-10 h-10 md:w-16 md:h-16">
-        <p class="text-gray-300 hidden md:block mt-2 text-sm xs:text-base sm:text-lg">Corel Draw</p>
-      </div>
-      <div class="flex-shrink-0 flex flex-col items-center">
-        <img src="{{ asset('apps-icons/adobe-ilustrator.png') }}" alt="Mobile" class="w-10 h-10 md:w-16 md:h-16">
-        <p class="text-gray-300 hidden md:block mt-2 text-sm xs:text-base sm:text-lg">Adobe Ilustrator</p>
-      </div>
-      <div class="flex-shrink-0 flex flex-col items-center">
-        <img src="{{ asset('apps-icons/adobe-indesign.png') }}" alt="Database" class="w-10 h-10 md:w-16 md:h-16">
-        <p class="text-gray-300 hidden md:block mt-2 text-sm xs:text-base sm:text-lg">Adobe Indesign</p>
-      </div>
-      <!-- Group 2 (Duplicate untuk efek infinite scroll) -->
-      <div class="flex-shrink-0 flex flex-col items-center">
-        <img src="{{ asset('apps-icons/adobe-photoshop.png') }}" alt="Code" class="w-10 h-10 md:w-16 md:h-16">
-        <p class="text-gray-300 hidden md:block mt-2 text-sm xs:text-base sm:text-lg">Adobe Photoshop</p>
-      </div>
-      <div class="flex-shrink-0 flex flex-col items-center">
-        <img src="{{ asset('apps-icons/corel-draw.png') }}" alt="Mobile" class="w-10 h-10 md:w-16 md:h-16">
-        <p class="text-gray-300 hidden md:block mt-2 text-sm xs:text-base sm:text-lg">Corel Draw</p>
-      </div>
-      <div class="flex-shrink-0 flex flex-col items-center">
-        <img src="{{ asset('apps-icons/adobe-ilustrator.png') }}" alt="Database" class="w-10 h-10 md:w-16 md:h-16">
-        <p class="text-gray-300 hidden md:block mt-2 text-sm xs:text-base sm:text-lg">Adobe Ilustrator</p>
-      </div>
-      <div class="flex-shrink-0 flex flex-col items-center">
-        <img src="{{ asset('apps-icons/adobe-indesign.png') }}" alt="Laptop" class="w-10 h-10 md:w-16 md:h-16">
-        <p class="text-gray-300 hidden md:block mt-2 text-sm xs:text-base sm:text-lg">Adobe Indesign</p>
+          <div class="tool-item group">
+            <div class="w-16 h-16 md:w-20 md:h-20 bg-slate-800/80 rounded-xl p-3 flex items-center justify-center mb-3 shadow-lg group-hover:bg-slate-700 transition-all duration-300 mx-auto border border-slate-700">
+              <img src="{{ asset('apps-icons/corel-draw.png') }}" alt="Corel Draw" class="w-10 h-10 md:w-12 md:h-12">
+            </div>
+            <p class="text-gray-300 group-hover:text-white text-sm md:text-base transition-colors duration-300">Corel Draw</p>
+          </div>
+
+          <div class="tool-item group">
+            <div class="w-16 h-16 md:w-20 md:h-20 bg-slate-800/80 rounded-xl p-3 flex items-center justify-center mb-3 shadow-lg group-hover:bg-slate-700 transition-all duration-300 mx-auto border border-slate-700">
+              <img src="{{ asset('apps-icons/adobe-ilustrator.png') }}" alt="Adobe Illustrator" class="w-10 h-10 md:w-12 md:h-12">
+            </div>
+            <p class="text-gray-300 group-hover:text-white text-sm md:text-base transition-colors duration-300">Adobe Illustrator</p>
+          </div>
+
+          <div class="tool-item group">
+            <div class="w-16 h-16 md:w-20 md:h-20 bg-slate-800/80 rounded-xl p-3 flex items-center justify-center mb-3 shadow-lg group-hover:bg-slate-700 transition-all duration-300 mx-auto border border-slate-700">
+              <img src="{{ asset('apps-icons/adobe-indesign.png') }}" alt="Adobe InDesign" class="w-10 h-10 md:w-12 md:h-12">
+            </div>
+            <p class="text-gray-300 group-hover:text-white text-sm md:text-base transition-colors duration-300">Adobe InDesign</p>
+          </div>
+
+          <!-- Tools Group 2 (Duplicate for infinite scroll) -->
+          <div class="tool-item group">
+            <div class="w-16 h-16 md:w-20 md:h-20 bg-slate-800/80 rounded-xl p-3 flex items-center justify-center mb-3 shadow-lg group-hover:bg-slate-700 transition-all duration-300 mx-auto border border-slate-700">
+              <img src="{{ asset('apps-icons/adobe-photoshop.png') }}" alt="Adobe Photoshop" class="w-10 h-10 md:w-12 md:h-12">
+            </div>
+            <p class="text-gray-300 group-hover:text-white text-sm md:text-base transition-colors duration-300">Adobe Photoshop</p>
+          </div>
+
+          <div class="tool-item group">
+            <div class="w-16 h-16 md:w-20 md:h-20 bg-slate-800/80 rounded-xl p-3 flex items-center justify-center mb-3 shadow-lg group-hover:bg-slate-700 transition-all duration-300 mx-auto border border-slate-700">
+              <img src="{{ asset('apps-icons/corel-draw.png') }}" alt="Corel Draw" class="w-10 h-10 md:w-12 md:h-12">
+            </div>
+            <p class="text-gray-300 group-hover:text-white text-sm md:text-base transition-colors duration-300">Corel Draw</p>
+          </div>
+
+          <div class="tool-item group">
+            <div class="w-16 h-16 md:w-20 md:h-20 bg-slate-800/80 rounded-xl p-3 flex items-center justify-center mb-3 shadow-lg group-hover:bg-slate-700 transition-all duration-300 mx-auto border border-slate-700">
+              <img src="{{ asset('apps-icons/adobe-ilustrator.png') }}" alt="Adobe Illustrator" class="w-10 h-10 md:w-12 md:h-12">
+            </div>
+            <p class="text-gray-300 group-hover:text-white text-sm md:text-base transition-colors duration-300">Adobe Illustrator</p>
+          </div>
+
+          <div class="tool-item group">
+            <div class="w-16 h-16 md:w-20 md:h-20 bg-slate-800/80 rounded-xl p-3 flex items-center justify-center mb-3 shadow-lg group-hover:bg-slate-700 transition-all duration-300 mx-auto border border-slate-700">
+              <img src="{{ asset('apps-icons/adobe-indesign.png') }}" alt="Adobe InDesign" class="w-10 h-10 md:w-12 md:h-12">
+            </div>
+            <p class="text-gray-300 group-hover:text-white text-sm md:text-base transition-colors duration-300">Adobe InDesign</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
 </section>
 
 <style>
   .animate-scroll {
-    animation: scroll 30s linear infinite;
+    animation: scroll 40s linear infinite;
     min-width: max-content;
-    width: 100%;
   }
 
   @keyframes scroll {
@@ -82,10 +108,22 @@
     }
 
     100% {
-      transform: translateX(calc(-50% - 1rem));
-      /* Menggeser setengah konten + sedikit spacing */
+      transform: translateX(calc(-50%));
     }
   }
+
+  .tool-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    transition: all 0.3s ease;
+  }
+
+  .tool-item:hover {
+    transform: translateY(-5px);
+  }
+
 
   /* Tambahkan overflow hidden pada container untuk menyembunyikan scrollbar */
   #box-video {

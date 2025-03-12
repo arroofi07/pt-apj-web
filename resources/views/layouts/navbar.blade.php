@@ -36,14 +36,22 @@
                 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
               </a>
               @endif
+              @if (Route::currentRouteName() == 'fasilitas.fasilitas')  
+              <a href="{{ route('home') }}" class="px-3 py-2 text-white hover:text-white relative group">
+                Home
+                <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
+              </a>
+              @else
               <a href="{{ route('fasilitas.fasilitas') }}" class="px-3 py-2 text-white hover:text-white relative group">
                 Fasilitas
                 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
               </a>
+              @endif
               <a href="#" class="px-3 py-2 text-white hover:text-white relative group">
                 Team
                 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full"></span>
               </a>
+
             </div>
 
             <!-- Right Side Buttons -->
