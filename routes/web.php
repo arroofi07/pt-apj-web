@@ -5,7 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LayananController;
 use App\Http\Controllers\FasilitasController;
 use App\Http\Controllers\AboutController;
-
+use App\Http\Controllers\TeamController;
 // 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
@@ -14,6 +14,7 @@ Route::get('/ai', function () {
 })->name('ai');
 
 Route::get('/fasilitas', [FasilitasController::class, 'index'])->name('fasilitas.fasilitas');
+Route::get('/team', [TeamController::class, 'index'])->name('team.team');
 
 Route::get('/navbar', function () {
     return view('layouts.navbar');
