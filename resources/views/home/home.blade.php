@@ -133,6 +133,14 @@
   <!-- Contact Section -->
   @include('layouts.contact')
 
+  <!-- Map Section -->
+  <section class="-z-40 mx-auto px-4 py-12">
+    <div class="max-w-6xl mx-auto">
+      <h2 style="color: white;" class="text-2xl md:text-3xl text-white font-bold text-center mb-8">Lokasi Kami</h2>
+      @include('layouts.map-location')
+    </div>
+  </section>
+
   <!-- footer -->
   @include('layouts.footer')
 

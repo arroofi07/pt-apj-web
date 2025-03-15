@@ -41,13 +41,13 @@
         </ul>
       </div>
 
-      <div>
+      <div class="">
         <h3 class="text-xl font-bold mb-6">Newsletter</h3>
         <p class="text-green-100 mb-4">Dapatkan info terbaru dan penawaran menarik</p>
         <form class="space-y-3">
           <input type="email" placeholder="Email Anda" class="w-full px-4 py-3 rounded-lg bg-green-700/50 border border-green-600 focus:outline-none focus:border-green-400 text-white placeholder-green-300">
           <button type="submit" class="w-full bg-white text-green-600 px-4 py-3 rounded-lg font-semibold hover:bg-green-50 transition-colors">
-            Berlangganan
+            Kirim
           </button>
         </form>
       </div>

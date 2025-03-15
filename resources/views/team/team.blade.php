@@ -2,22 +2,61 @@
 @section('content')
 <div class="team-page">
   <!-- Hero Section -->
-  <div class="team-hero">
-    <div class="container">
-      <div class="hero-content">
-        <h1 class="hero-title">Our Team</h1>
-        <p class="hero-subtitle">Talented professionals committed to excellence and innovation</p>
+  <div class="container relative z-10 mx-auto top-24 mb-16 px-4 h-full flex items-center">
+
+
+    <div class="max-w-4xl">
+      <!-- Desain heading yang lebih presisi -->
+      <div class="mb-2">
+        <span class="inline-block px-4 py-1 bg-green-500 text-sm font-bold text-gray-900 tracking-wider uppercase rounded-sm mb-4">Kami adalah perusahaan yang bergerak di bidang percetakan</span>
       </div>
+
+      <h1 class="text-5xl md:text-6xl font-extrabold mb-6 text-white leading-tight">
+        Teknologi <span class="text-green-500 relative">Premium<span class="absolute -bottom-2 left-0 h-1 w-full bg-green-500 opacity-50"></span></span>
+        <br class="hidden md:block">untuk Bisnis Anda
+      </h1>
+
+      <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl font-light leading-relaxed">
+        Menghadirkan peralatan percetakan terkini dengan presisi tinggi untuk menghasilkan cetakan berkualitas.
+      </p>
+
+      <!-- Tombol yang lebih elegan -->
+      <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+        <a href="#peralatan" class="group inline-flex items-center justify-center px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-sm transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl">
+          <span>Jelajahi Team Kami</span>
+        </a>
+
+      </div>
+
+      <!-- Metrik perusahaan - menambah kredibilitas -->
+      <!-- <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-gray-700 pt-8">
+        <div class="text-center">
+          <div class="text-3xl font-bold text-green-500">15+</div>
+          <div class="text-sm text-gray-400 mt-1">Tahun Pengalaman</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-green-500">250+</div>
+          <div class="text-sm text-gray-400 mt-1">Klien Perusahaan</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-green-500">12</div>
+          <div class="text-sm text-gray-400 mt-1">Peralatan Canggih</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-green-500">99%</div>
+          <div class="text-sm text-gray-400 mt-1">Klien Puas</div>
+        </div>
+      </div> -->
     </div>
   </div>
 
   <!-- Leadership Section -->
-  <section class="leadership-section">
+  <section class="leadership-section mt-32">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Leadership</span>
-        <h2 style="color: white;" class="section-title">Executive Team</h2>
-        <p class="section-description text-gray-400">Meet the visionaries guiding our company's future</p>
+        <span class="section-tag">Pimpinan</span>
+        <h2 style="color: white;" class="section-title">Team Executive</h2>
+        <p class="section-description text-gray-400">Memimpin perusahaan dengan visi dan misi yang jelas</p>
       </div>
 
       <div class="leadership-grid">
@@ -30,11 +69,11 @@
             <h3 class="exec-name text-white">{{ $executive['name'] }}</h3>
             <span class="exec-position text-gray-400 ">{{ $executive['title'] }}</span>
             <!-- <p class="exec-bio text-gray-400">{{ $executive['bio'] }}</p> -->
-            <div class="social-links">
+            <!-- <div class="social-links">
               <a href="#" class="social-link linkedin" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
               <a href="#" class="social-link twitter" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
               <a href="#" class="social-link email" aria-label="Email Contact"><i class="far fa-envelope"></i></a>
-            </div>
+            </div> -->
           </div>
         </div>
         @endforeach
@@ -46,9 +85,9 @@
   <section class="departments-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag text-white">Departments</span>
-        <h2 style="color: white;" class="section-title text-white">Our Expertise</h2>
-        <p class="section-description text-gray-400">Specialized teams working together to achieve excellence</p>
+        <span class="section-tag text-white">Dapartment</span>
+        <h2 style="color: white;" class="section-title text-white">Keahlian Kami</h2>
+        <p class="section-description text-gray-400">Tim-tim yang bekerja sama untuk mencapai keunggulan</p>
       </div>
 
       <div class="department-grid">
@@ -69,9 +108,9 @@
   <section class="team-members-section">
     <div class="container">
       <div class="section-header">
-        <span style="color: white;" class="section-tag">Our People</span>
-        <h2 style="color: white;" class="section-title">Meet the Team</h2>
-        <p class="section-description text-gray-400">The talented individuals behind our success</p>
+        <span style="color: white;" class="section-tag">Tim Kami</span>
+        <h2 style="color: white;" class="section-title">Ketahui Lebih Lanjut Tentang Kami</h2>
+        <p class="section-description text-gray-400">Tim-tim yang bekerja sama untuk mencapai keunggulan</p>
       </div>
 
       <div class="team-filter">
@@ -94,10 +133,10 @@
             <h4 class="member-name text-white">{{ $member['name'] }}</h4>
             <!-- <span class="member-position text-gray-400">{{ $member['position'] }}</span> -->
             <span class="member-department text-gray-400">{{ $member['nama-jabatan'] }}</span>
-            <div class="social-links">
+            <!-- <div class="social-links">
               <a href="#" class="social-link linkedin" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
               <a href="#" class="social-link email" aria-label="Email Contact"><i class="far fa-envelope"></i></a>
-            </div>
+            </div> -->
           </div>
         </div>
         @endforeach

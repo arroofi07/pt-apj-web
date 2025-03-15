@@ -55,33 +55,48 @@
 
       <!-- Kolom Kanan: Form Kontak -->
       <div>
-        <div class="w-full  bg-gradient-to-br from-gray-700 to-gray-800 rounded-2xl p-4 sm:p-6 md:p-8 shadow-2xl border-2 border-green-400/50 hover:border-green-400 transition-all duration-300">
-          <form>
+        <div class="w-full bg-gradient-to-br from-gray-700 to-gray-800 rounded-2xl p-4 sm:p-6 md:p-8 shadow-2xl border-2 border-green-400/50 hover:border-green-400 transition-all duration-300">
+          @if(session('success'))
+          <div class="mb-4 p-4 bg-green-500/20 text-green-400 rounded-lg">
+            {{ session('success') }}
+          </div>
+          @endif
+          @if(session('error'))
+          <div class="mb-4 p-4 bg-red-500/20 text-red-400 rounded-lg">
+            {{ session('error') }}
+          </div>
+          @endif
+          <form method="post" action="{{ route('send-email') }}" enctype="multipart/form-data">
+            @csrf
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4">
               <div>
                 <input
                   type="text"
                   class="w-full px-3 py-2 sm:px-4 sm:py-3 text-xs text-white sm:text-base placeholder:text-white/60 bg-white/5 border border-green-400/50 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-green-400 outline-none transition-all"
-                  placeholder="Nama Lengkap">
+                  placeholder="Nama Lengkap"
+                  name="name">
               </div>
               <div>
                 <input
                   type="email"
                   class="w-full px-3 py-2 sm:px-4 sm:py-3 text-xs text-white sm:text-base placeholder:text-white/60 bg-white/5 border border-green-400/50 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-green-400 outline-none transition-all"
-                  placeholder="Email">
+                  placeholder="Email"
+                  name="email" id="">
               </div>
             </div>
             <div class="mb-4">
               <input
                 type="text"
                 class="w-full px-3 py-2 sm:px-4 sm:py-3 text-xs text-white sm:text-base placeholder:text-white/60 bg-white/5 border border-green-400/50 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-green-400 outline-none transition-all"
-                placeholder="Subjek">
+                placeholder="Subjek"
+                name="subjek">
             </div>
             <div class="mb-4">
               <textarea
                 rows="4"
                 class="w-full px-3 py-2 sm:px-4 sm:py-3 text-xs text-white sm:text-base placeholder:text-white/60 bg-white/5 border border-green-400/50 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-green-400 outline-none transition-all"
-                placeholder="Pesan Anda"></textarea>
+                placeholder="Pesan Anda"
+                name="pesan"></textarea>
             </div>
             <button
               type="submit"

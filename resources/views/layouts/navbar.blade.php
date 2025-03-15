@@ -11,7 +11,7 @@
 
 <body class="bg-gradient-to-br from-black via-gray-900 to-black">
   <!-- Navbar -->
-  <div class="fixed w-full top-0 z-50">
+  <div class="z-50 fixed w-full top-0 z-50">
     <!-- Top notification bar (optional) -->
     <div class="hidden md:block bg-green-800 text-xs text-white py-1">
       <div class="container mx-auto px-4 flex justify-between items-center">
@@ -34,10 +34,10 @@
           <!-- Logo and Brand -->
           <div class="flex items-center">
             <a href="{{ route('home') }}" class="flex items-center">
-              <img src="{{ asset('images/logo-putih.png') }}" alt="APJ Logo" class="h-9  w-auto mr-3 hidden md:block">
+              <img src="{{ asset('images/logo-putih.png') }}" alt="APJ Logo" class="h-9  w-auto mr-3  md:block">
               <div>
                 <span class="text-lg font-bold text-white block leading-tight">Andalas</span>
-                <span class="text-xs text-green-200 block leading-tight -mt-1 hidden md:block">Publikasi Jaya</span>
+                <span class="text-xs text-green-200 block leading-tight -mt-1  md:block">Publikasi Jaya</span>
               </div>
             </a>
           </div>
@@ -62,6 +62,10 @@
 
               <a href="{{ route('team.team') }}" class="px-3 py-2 text-white hover:text-white relative group transition-all duration-200 ease-in-out">
                 <span class="relative z-10">Team</span>
+                <span class="absolute bottom-0 left-0 w-full h-0.5 bg-white opacity-0 group-hover:opacity-100 transition-all duration-300 transform origin-left scale-x-0 group-hover:scale-x-100"></span>
+              </a>
+              <a href="https://maps.google.com/maps?q=-0.9356786873818104, 100.36526685649362" target="_blank" class="px-3 py-2 text-white hover:text-white relative group transition-all duration-200 ease-in-out">
+                <span class="relative z-10">Lokasi</span>
                 <span class="absolute bottom-0 left-0 w-full h-0.5 bg-white opacity-0 group-hover:opacity-100 transition-all duration-300 transform origin-left scale-x-0 group-hover:scale-x-100"></span>
               </a>
             </div>
@@ -115,6 +119,9 @@
           </a>
           <a href="{{ route('team.team') }}" class="mobile-link block px-4 py-3 text-base font-medium text-white rounded-lg hover:bg-green-900 transition-colors">
             <i class="fas fa-users mr-2"></i> Team
+          </a>
+          <a href="https://maps.google.com/maps?q=-0.9356786873818104, 100.36526685649362" target="_blank" class="mobile-link block px-4 py-3 text-base font-medium text-white rounded-lg hover:bg-green-900 transition-colors">
+            <i class="fas fa-map-marker-alt mr-2"></i> Lokasi
           </a>
 
           <div class="border-t border-green-600 my-3"></div>
@@ -208,6 +215,8 @@
       });
     });
   </script>
+
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
   <style>
     /* Navbar scroll effect */
