@@ -32,15 +32,15 @@
           <!-- icons -->
           <div class="flex mt-6 gap-4 animate-fade-in-up delay-500 items-center justify-center md:justify-start">
             <a href="https://wa.me/6282288352595"
-              class="p-2 rounded-lg transition-all duration-300 hover:scale-110 animate-bounce delay-300 hover:bg-green-500/10 text-green-600">
+              class="p-2 rounded-lg transition-all duration-300 hover:scale-110  delay-300 hover:bg-green-500/10 text-green-600">
               <x-fab-square-whatsapp class="w-8 h-8 sm:w-14 sm:h-14" />
             </a>
             <a href="https://www.instagram.com/unandpress_?igsh=d2plazY2NGU4c2Zk"
-              class="p-2 rounded-lg transition-all duration-300 hover:scale-110 animate-bounce delay-400 hover:bg-pink-500/10 text-pink-600 ">
+              class="p-2 rounded-lg transition-all duration-300 hover:scale-110  delay-400 hover:bg-pink-500/10 text-pink-600 ">
               <x-fab-square-instagram class="w-8 h-8 sm:w-14 sm:h-14" />
             </a>
             <a href="https://www.facebook.com/unandpress"
-              class="p-2 rounded-lg transition-all duration-300 hover:scale-110 animate-bounce delay-500 hover:bg-blue-500/10 text-blue-600">
+              class="p-2 rounded-lg transition-all duration-300 hover:scale-110  delay-500 hover:bg-blue-500/10 text-blue-600">
               <x-fab-square-facebook class="w-8 h-8 sm:w-14 sm:h-14" />
             </a>
           </div>
@@ -133,13 +133,7 @@
   <!-- Contact Section -->
   @include('layouts.contact')
 
-  <!-- Map Section -->
-  <section class="-z-40 mx-auto px-4 py-12">
-    <div class="max-w-6xl mx-auto">
-      <h2 style="color: white;" class="text-2xl md:text-3xl text-white font-bold text-center mb-8">Lokasi Kami</h2>
-      @include('layouts.map-location')
-    </div>
-  </section>
+
 
   <!-- footer -->
   @include('layouts.footer')

@@ -1,14 +1,14 @@
-<div class="relative -z-40 border-2 border-green-500 rounded-xl">
+<div id="map-nih" class="relative border-2 border-green-500 rounded-xl">
   <!-- Map Container with improved styling -->
   <div class="w-full h-[500px] rounded-xl overflow-hidden shadow-lg relative" id="map"></div>
 
   <!-- Floating Card with Location Details -->
-  <div class="absolute bg-gradient-to-r from-gray-600 to-gray-700 top-4 left-4  p-6 rounded-xl shadow-lg max-w-sm z-[999] backdrop-blur-sm ">
+  <!-- <div class="absolute  top-4 left-4 bg-gradient-to-r from-gray-600 to-gray-700  p-6 rounded-xl shadow-lg max-w-sm z-[999] backdrop-blur-sm ">
     <h3 class="text-xl font-semibold text-white mb-2">PT. Andalas Publikasi Jaya</h3>
-    <p class="text-white mb-4">PT Andalas Publikasi Jaya, Padang, Sumatera Barat</p>
+    <p class="text-white mb-4">PT Andalas Publikasi Jaya, Padang, Sumatera Barat</p> -->
 
-    <!-- Direction Buttons -->
-    <div class="flex gap-3">
+  <!-- Direction Buttons -->
+  <!-- <div class="flex gap-3 bg-gradient-to-r ">
       <a href="https://maps.google.com/maps?q=-0.9356786873818104,100.36526685649362"
         target="_blank"
         class="inline-flex items-center px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition duration-300 shadow-md hover:shadow-lg">
@@ -19,7 +19,7 @@
         Buka di Google Maps
       </a>
     </div>
-  </div>
+  </div> -->
 </div>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -67,54 +67,55 @@
 </script>
 
 <style>
-  /* Custom Marker Style */
+  .custom-div-icon {
+    background: transparent;
+    border: none;
+  }
+
   .marker-pin {
     width: 30px;
     height: 30px;
     border-radius: 50% 50% 50% 0;
     background: #22c55e;
+    /* warna hijau */
     position: absolute;
     transform: rotate(-45deg);
     left: 50%;
     top: 50%;
     margin: -15px 0 0 -15px;
-    animation: bounce 1s ease-in-out infinite;
+    animation: bounce 0.5s ease-in-out infinite alternate;
   }
 
   .marker-pin::after {
     content: '';
-    width: 20px;
-    height: 20px;
-    margin: 5px 0 0 5px;
+    width: 14px;
+    height: 14px;
+    margin: 8px 0 0 8px;
     background: #fff;
     position: absolute;
     border-radius: 50%;
   }
 
   @keyframes bounce {
-
-    0%,
-    100% {
+    from {
       transform: rotate(-45deg) translateY(0);
     }
 
-    50% {
+    to {
       transform: rotate(-45deg) translateY(-5px);
     }
   }
 
-  /* Custom Popup Style */
-  .leaflet-popup-content-wrapper {
-    border-radius: 10px;
+  .custom-popup {
     padding: 10px;
   }
 
-  .custom-popup {
-    padding: 5px;
+  .custom-popup h4 {
+    margin: 0 0 5px;
+    color: #333;
   }
 
-  /* Map Container Style */
-  #map {
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  .custom-popup p {
+    margin: 0;
   }
 </style>

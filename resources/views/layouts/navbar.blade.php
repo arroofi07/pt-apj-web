@@ -11,7 +11,7 @@
 
 <body class="bg-gradient-to-br from-black via-gray-900 to-black">
   <!-- Navbar -->
-  <div class="z-50 fixed w-full top-0 z-50">
+  <div class="fixed w-full top-0 z-50">
     <!-- Top notification bar (optional) -->
     <div class="hidden md:block bg-green-800 text-xs text-white py-1">
       <div class="container mx-auto px-4 flex justify-between items-center">
@@ -83,7 +83,7 @@
                 <span>Tanya AI</span>
               </a>
               @endif
-              <a href="#contact" class="flex items-center space-x-2 px-4 py-2 text-sm font-medium text-green-700 bg-white hover:bg-gray-100 rounded-lg transition-all duration-300 shadow-md">
+              <a href="https://wa.me/6282288352595" class="flex items-center space-x-2 px-4 py-2 text-sm font-medium text-green-700 bg-white hover:bg-gray-100 rounded-lg transition-all duration-300 shadow-md">
                 <i class="fas fa-phone-alt text-xs"></i>
                 <span>Hubungi Kami</span>
               </a>
